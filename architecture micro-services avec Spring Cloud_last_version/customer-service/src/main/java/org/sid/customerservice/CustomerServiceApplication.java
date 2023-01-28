@@ -17,7 +17,7 @@ public class CustomerServiceApplication {
         SpringApplication.run(CustomerServiceApplication.class, args);
     }
 
-    @Bean //execute au démarrage
+    @Bean 
     CommandLineRunner start(CustomerRepository customerRepository, RepositoryRestConfiguration restConfiguration){
 
         restConfiguration.exposeIdsFor(Customer.class);
