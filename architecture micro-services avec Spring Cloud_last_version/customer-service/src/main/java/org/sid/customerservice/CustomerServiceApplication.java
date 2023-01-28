@@ -22,9 +22,9 @@ public class CustomerServiceApplication {
 
         restConfiguration.exposeIdsFor(Customer.class);
         return args -> {
-            customerRepository.save(new Customer(null,"Mohammed","med@gmail.com"));
-            customerRepository.save(new Customer(null,"Hassan","hassan@gmail.com"));
-            customerRepository.save(new Customer(null,"Salima","salima@gmail.com"));
+            customerRepository.save(new Customer(null,"adnane","adnane@gmail.com"));
+            customerRepository.save(new Customer(null,"talal","talal@gmail.com"));
+            customerRepository.save(new Customer(null,"john","john@gmail.com"));
 
             customerRepository.findAll().forEach(c->{
                 System.out.println(c.toString());
